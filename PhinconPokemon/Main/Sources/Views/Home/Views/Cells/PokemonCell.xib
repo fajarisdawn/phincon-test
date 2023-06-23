@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="PokemonCell" customModule="PhinconPokemon" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="155" height="200"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="155" height="200"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PgY-2K-E1B">
+                        <rect key="frame" x="0.0" y="0.0" width="155" height="155"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="155" id="VlX-BH-qTP"/>
+                            <constraint firstAttribute="height" constant="155" id="ZxN-A4-i4v"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nBR-v0-6yH">
+                        <rect key="frame" x="10" y="165" width="135" height="14.5"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="nBR-v0-6yH" firstAttribute="top" secondItem="PgY-2K-E1B" secondAttribute="bottom" constant="10" id="65E-wE-OIw"/>
+                <constraint firstAttribute="trailing" secondItem="nBR-v0-6yH" secondAttribute="trailing" constant="10" id="C7x-w6-Gpi"/>
+                <constraint firstItem="nBR-v0-6yH" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="Che-z9-l6Y"/>
+                <constraint firstItem="PgY-2K-E1B" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="P9W-zp-VZq"/>
+                <constraint firstItem="PgY-2K-E1B" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="muC-fG-0bN"/>
+                <constraint firstAttribute="trailing" secondItem="PgY-2K-E1B" secondAttribute="trailing" id="wUL-xq-4pv"/>
+            </constraints>
+            <size key="customSize" width="137" height="189"/>
+            <connections>
+                <outlet property="pokemonImageView" destination="PgY-2K-E1B" id="pgg-sC-upa"/>
+                <outlet property="pokemonNameLabel" destination="nBR-v0-6yH" id="me2-jw-1x2"/>
+            </connections>
+            <point key="canvasLocation" x="-67.391304347826093" y="95.758928571428569"/>
+        </collectionViewCell>
+    </objects>
+</document>

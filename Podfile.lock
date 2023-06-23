@@ -1,0 +1,35 @@
+PODS:
+  - Kingfisher (6.3.1)
+  - NVActivityIndicatorView (5.1.1):
+    - NVActivityIndicatorView/Base (= 5.1.1)
+  - NVActivityIndicatorView/Base (5.1.1)
+  - SkeletonView (1.8.2)
+
+DEPENDENCIES:
+  - Kingfisher (~> 6.3.1)
+  - NVActivityIndicatorView
+  - SkeletonView (from `https://github.com/Juanpe/SkeletonView`, tag `1.8.2`)
+
+SPEC REPOS:
+  trunk:
+    - Kingfisher
+    - NVActivityIndicatorView
+
+EXTERNAL SOURCES:
+  SkeletonView:
+    :git: https://github.com/Juanpe/SkeletonView
+    :tag: 1.8.2
+
+CHECKOUT OPTIONS:
+  SkeletonView:
+    :git: https://github.com/Juanpe/SkeletonView
+    :tag: 1.8.2
+
+SPEC CHECKSUMS:
+  Kingfisher: 016c8b653a35add51dd34a3aba36b580041acc74
+  NVActivityIndicatorView: 1f6c5687f1171810aa27a3296814dc2d7dec3667
+  SkeletonView: bb27c39857e5492136f02ee8a3aa78de55d12ecd
+
+PODFILE CHECKSUM: 69e1926f0b57ba0ad88b32e8c9cccebe82eb393e
+
+COCOAPODS: 1.12.1
