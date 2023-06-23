@@ -13,7 +13,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        Storage.delete()
         self.window = UIWindow(frame: UIScreen.main.bounds)
         let viewModel = HomeViewModel()
         let viewController = UINavigationController(rootViewController: HomeViewController(viewModel))
